@@ -1,3 +1,5 @@
+try{Typekit.load();}catch(e){}
+
 var feed = new Instafeed({
 		get: 'user',
 		userId: 1400590791,
