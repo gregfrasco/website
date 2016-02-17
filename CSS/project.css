@@ -27,6 +27,48 @@
   background-size: cover;
 }
 
+.project4{
+  background-image: url('images/project4.jpg');
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.project5{
+  background-image: url('images/project5.jpg');
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.project6{
+  background-image: url('images/project6.jpg');
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.project7{
+  background-image: url('images/project7.jpg');
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.project8{
+  background-image: url('images/project8.jpg');
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.project9{
+  background-image: url('images/project9.jpg');
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
 .project-text {
   position: absolute;
   top: 0;
