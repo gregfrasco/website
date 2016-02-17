@@ -13,6 +13,20 @@
   background-size: cover;
 }
 
+.project2{
+  background-image: url('images/project2.jpg');
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.project3{
+  background-image: url('images/project3.jpg');
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
 .project-text {
   position: absolute;
   top: 0;
