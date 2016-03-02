@@ -11,8 +11,6 @@
   <link rel="stylesheet" href="CSS/semantic.min.css">
   <link rel="stylesheet" href="CSS/photography.css">
   <!-- Instafeed css -->
-  <script type="text/javascript" src="http://secure.gaug.es/track.js"></script>
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Greg Frasco personal website">
@@ -21,9 +19,7 @@
   <script type="text/javascript" src="http://use.typekit.net/uqy4hsa.js"></script>
   <script type="text/javascript" src="http://garand.me/assets/script/instagram.js"></script>
   <!--<link rel="stylesheet" href="http://garand.me/assets/style/main.css">-->
-  <script type="text/javascript" src="JS/main.js"></script>
-
-
+  <script type="text/javascript" src="https://github.com/gregfrasco/gregfrasco.github.io/raw/master/JS/main.js"></script>
 
 </head>
 <body>
@@ -35,8 +31,8 @@
         </center>
       </div>
       <div class="col-md-8  col-xs-12">
-        <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail picture hidden-xs" />
-        <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail visible-xs picture_mob" />
+        <!--<img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail picture hidden-xs" />-->
+        <!--<img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail visible-xs picture_mob" />-->
         <div class="header">
           <h1>Lorem Ipsum</h1>
           <h4>Web Developer</h4>
@@ -95,5 +91,63 @@
     ga('send', 'pageview');
     </script>
     <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
+    <script>
+    $(function() {
+      $.ajax({
+        type: "GET",
+        dataType: "jsonp",
+        cache: true,
+              url: "https://api.instagram.com/v1/users/1400590791/?access_token=94764.1677ed0.c6256a27eddf41709ddf29af3469a4e5",
+        success: function(data) {
+          var ig_count = data.data.counts.followed_by.toString();
+          ig_count = add_commas(ig_count);
+          $(".instagram_follower").html(ig_count);
+        }
+      });
+
+      $(function() {
+        $.ajax({
+          type: "GET",
+          dataType: "jsonp",
+          cache: true,
+                url: "https://api.instagram.com/v1/users/1400590791/?access_token=94764.1677ed0.c6256a27eddf41709ddf29af3469a4e5",
+          success: function(data) {
+            var ig_count = data.data.counts.media.toString();
+            ig_count = add_commas(ig_count);
+            $(".instagram_photo").html(ig_count);
+          }
+        });
+
+        $(function() {
+          $.ajax({
+            type: "GET",
+            dataType: "jsonp",
+            cache: true,
+                  url: "https://api.instagram.com/v1/users/1400590791/?access_token=94764.1677ed0.c6256a27eddf41709ddf29af3469a4e5",
+            success: function(data) {
+              var ig_count = data.data.counts.media.toString();
+              ig_count = add_commas(ig_count);
+              $(".instagram_following").html(ig_count);
+            }
+          });
+
+      function add_commas(number) {
+        if (number.length > 3) {
+          var mod = number.length % 3;
+          var output = (mod > 0 ? (number.substring(0,mod)) : '');
+          for (i=0 ; i < Math.floor(number.length / 3); i++) {
+            if ((mod == 0) && (i == 0)) {
+              output += number.substring(mod+ 3 * i, mod + 3 * i + 3);
+            } else {
+              output+= ',' + number.substring(mod + 3 * i, mod + 3 * i + 3);
+            }
+          }
+          return (output);
+        } else {
+          return number;
+        }
+      }
+    });
+    </script>
   </body>
   </html>
