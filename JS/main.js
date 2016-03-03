@@ -102,15 +102,3 @@ if (number.length > 3) {
 }
 }
 });
-
-$(function() {
-$.ajax({
-type: "GET",
-dataType: "jsonp",
-cache: true,
-			url: "https://api.instagram.com/v1/media/_MgD1rjGHC/?access_token=94764.1677ed0.c6256a27eddf41709ddf29af3469a4e5",
-success: function(data) {
-	var ig_link = data.images.standard_resolution.url.toString();
-	$(".instagram_headerImage").html(ig_link);
-}
-});
