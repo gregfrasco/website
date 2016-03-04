@@ -1,75 +1,19 @@
-.project{
+/*.project{
   height: 100%;
   width: 100%;
 }
 .col-md-4{
   padding: 0;
 }
-
-.project1{
-  background-image: url('images/project1.jpg');
+*/
+.project-image{
   background-position: top;
   background-repeat:no-repeat;
   background-size: cover;
+  
 }
 
-.project2{
-  background-image: url('images/project2.jpg');
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.project3{
-  background-image: url('images/project3.jpg');
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.project4{
-  background-image: url('images/project4.jpg');
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.project5{
-  background-image: url('images/project5.jpg');
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.project6{
-  background-image: url('images/project6.jpg');
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.project7{
-  background-image: url('images/project7.jpg');
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.project8{
-  background-image: url('images/project8.jpg');
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.project9{
-  background-image: url('images/project9.jpg');
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-.project-text {
+.likes {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -77,13 +21,16 @@
   right: 0;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  visibility:hidden;
-  opacity:0;
-  text-align: center;
-  font-size: larger;
+  visibility: hidden;
+  opacity: 0;
 }
 
-div:hover .project-text {
+.likes > p {
+  text-align: center;
+  margin-top: 40%;
+  font-size: larger;
+}
+a:hover .likes {
   visibility: visible;
   opacity:1;
 }
