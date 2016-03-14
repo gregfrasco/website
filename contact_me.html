@@ -60,24 +60,26 @@
     </div>
 
     <div class="col-sm-8 contact-form">
-      <form class="form" role="form" method="POST" action="http://formspree.io/frascog17@gmail.com">
+
+        <form class="form" role="form" action="//formspree.io/frascog17@gmail.com">
         <div class="row">
           <div class="col-xs-6 col-md-6 form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
           </div>
           <div class="col-xs-6 col-md-6 form-group">
-            <input class="form-control" id="_replyto" name="email" placeholder="Email" type="email" required />
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
           </div>
           <div class="col-xs-12 form-group">
-            <input class="form-control" type="text" name="_subject" placeholder="Subject" required/>
+            <input class="form-control" type="text" name="subject" placeholder="Subject" required/>
           </div>
         </div>
         <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required></textarea>
         <br />
+
         <div class="row">
           <div class="col-xs-12 col-md-12 form-group">
-            <div class="g-recaptcha pull-left" data-sitekey="6LfDvBoTAAAAAFYDqs6F4Pj4vjI1hnYMGEaQ7ahz"></div>
-            <a class="pull-right" href="/private_policy">View Private Policy Infotmation</a><br /><br />
+            <input type="text" name="_gotcha"  style="display:none"/>
+            <a class="pull-left" href="/private_policy">*View Private Policy Infotmation</a>
             <button class="btn btn-primary pull-right" type="submit">Submit</button>
           </div>
         </div>
@@ -93,7 +95,5 @@
 ga('create', 'UA-73186004-1', 'auto');
 ga('send', 'pageview');
 </script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-
 </body>
 </html>
