@@ -6,12 +6,21 @@
   padding: 0;
 }
 */
-.project-image{
-  background-position: top;
-  background-repeat:no-repeat;
-  background-size: cover;
-  
+.img-wrapper{
+	width: 100%;
+	padding-bottom: 100%; /* your aspect ratio here! */
+	position: relative;
 }
+
+.img-wrapper img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-height: 100%;
+  max-width: 100%;
+} /* optional: if you want the smallest images to fill the .thumbnail */
 
 .likes {
   position: absolute;
@@ -27,9 +36,24 @@
 
 .likes > p {
   text-align: center;
-  margin-top: 40%;
   font-size: larger;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  margin-top: -9px;
 }
+
+.likes > h2 {
+  text-align: center;
+  font-size: 250%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin-top: -9px;
+}
+
 a:hover .likes {
   visibility: visible;
   opacity:1;
