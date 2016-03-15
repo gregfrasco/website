@@ -9,7 +9,7 @@ var feed = new Instafeed({
 		limit: '24',
 		sortBy: 'most-liked',
 		resolution: 'standard_resolution',
-		template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes"><p><i class="large red heart icon"></i> {{likes}}<br>{{location}}</p></div>',
+		template: '<a href="{{link}}" target="_blank"><div class="nailthumb-container square-thumb"><img src="{{image}}" /></div><div class="likes"><p><i class="large red heart icon"></i> {{likes}}<br>{{location}}</p></div>',
 });
 
 window.onload = function() {
