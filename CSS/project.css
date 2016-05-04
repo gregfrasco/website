@@ -58,3 +58,12 @@ a:hover .likes {
   visibility: visible;
   opacity:1;
 }
+
+.projectTitle{
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.3em;
+	font-size: larger;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
