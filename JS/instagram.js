@@ -8,6 +8,7 @@
                 get: "popular",
                 resolution: "thumbnail",
                 sortBy: "none",
+                limit: 24,
                 links: !0,
                 mock: !1,
                 useHttp: !1
