@@ -149,7 +149,7 @@
 var feed = new Instafeed({
 		get: 'user',
 		userId: 1400590791,
-		accessToken: '1400590791.1677ed0.e83ed2d6d3a74b58a30addc9b5afe8c3',
+		accessToken: '1400590791.1677ed0.6d60eecd503d42399e47638094b573ea',
 		target: 'instagram',
 		limit: '24',
 		sortBy: 'most-liked',
@@ -166,7 +166,7 @@ $.ajax({
 	type: "GET",
 	dataType: "jsonp",
 	cache: true,
-				url: "https://api.instagram.com/v1/users/1400590791/?access_token=1400590791.1677ed0.e83ed2d6d3a74b58a30addc9b5afe8c3",
+				url: "https://api.instagram.com/v1/users/1400590791/?access_token=1400590791.1677ed0.6d60eecd503d42399e47638094b573ea",
 	success: function(data) {
 		var ig_count = data.data.counts.followed_by.toString();
 		ig_count = add_commas(ig_count);
@@ -196,7 +196,7 @@ $.ajax({
 type: "GET",
 dataType: "jsonp",
 cache: true,
-			url: "https://api.instagram.com/v1/users/1400590791/?access_token=1400590791.1677ed0.e83ed2d6d3a74b58a30addc9b5afe8c3",
+			url: "https://api.instagram.com/v1/users/1400590791/?access_token=1400590791.1677ed0.6d60eecd503d42399e47638094b573ea",
 success: function(data) {
 	var ig_count = data.data.counts.media.toString();
 	ig_count = add_commas(ig_count);
@@ -226,7 +226,7 @@ $.ajax({
 type: "GET",
 dataType: "jsonp",
 cache: true,
-			url: "https://api.instagram.com/v1/users/1400590791/?access_token=1400590791.1677ed0.e83ed2d6d3a74b58a30addc9b5afe8c3",
+			url: "https://api.instagram.com/v1/users/1400590791/?access_token=1400590791.1677ed0.6d60eecd503d42399e47638094b573ea",
 success: function(data) {
 	var ig_count = data.data.counts.follows.toString();
 	ig_count = add_commas(ig_count);
