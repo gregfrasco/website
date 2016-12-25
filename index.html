@@ -1,73 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title> Greg Frasco </title>
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <!-- semantic-ui -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css">
-  <!-- other css -->
-  <link rel="stylesheet" href="http://garand.me/assets/style/main.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hello! My Name is Greg Frasco, and I am software developer, and a photography enthusiast.">
-  <meta name="author" content="Greg Frasco">
-  <meta name="ROBOTS" content="INDEX, NOFOLLOW">
-  <link rel="icon" type="img/ico" href="http://gregfrasco.github.io/files/favicon.ico">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Font Awesome -->
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+  <!-- Anaimate Css-->
+  <link rel="stylesheet" href="css/animate.css">
+  <title>Greg Frasco</title>
 </head>
 <body>
-  <div class="container">
-    <center>
-      <img style="margin-top:5%" src="https://avatars1.githubusercontent.com/u/5147346?v=3&s=460" alt="Greg Frasco" class="photo img-circle" width="200" height="200">
-      <br>
-      <br>
-      <h2 class="greeting">Hello,</h2>
-      <h1 class="name">I'm Greg Frasco</h1>
-      <h3 class="message">I’m a <a href="http://github.com/gregfrasco" target="_blank">software developer</a>, and a <a href="http://instagram.com/gregfrasco">photography enthusiast</a>. Send me an <a data-toggle="collapse" data-target="#collapseExampleEmail" aria-expanded="false" aria-controls="collapseExample" href="#">email</a>.</h3>
-      <div style="margin-bottom:10px">
-        <button class="btn btn-default btn-lg" type="button" data-toggle="collapse" data-target="#collapseExampleEmail" aria-expanded="false" aria-controls="collapseExample"><i class="mail outline icon"></i></button>
-        <button class="btn btn-default btn-lg" type="button" data-toggle="collapse" data-target="#collapseExamplePhone" aria-expanded="false" aria-controls="collapseExample"><i class="phone icon"></i></button>
-        <a class="btn btn-default btn-lg" target="_blank" href="https://www.linkedin.com/in/gregfrasco" role="button"><i class="linkedin icon"></i></a>
-        <a class="btn btn-default btn-lg" target="_blank" href="https://github.com/gregfrasco" role="button"><i class="github icon"></i></a>
-        <a class="btn btn-default btn-lg" target="_blank" href="https://www.instagram.com/gregfrasco/" role="button"><i class="instagram icon"></i></a>
-      </div>
-      <div class="collapse" id="collapseExampleEmail">
-        <div class="well">
-          <a href="mailto:frascog@wit.edu">frascog@wit.edu</a>
+  <div class="row"></div>
+  <div class="row container">
+    <div class="col s4"></div>
+    <div class="col s4">
+      <div class="row">
+        <div class="valign-wrapper">
+          <div class="card wow bounceInDown s1">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="responsive-img" src="https://avatars1.githubusercontent.com/u/5147346?v=3&s=460" alt="Greg Frasco">
+            </div>
+            <div class="card-content center-align">
+              <p class="card-title grey-text text-darken-4">Hello!</p>
+              <p class="card-title grey-text text-darken-4">My name is Greg Frasco.</p>
+              <p class="message">I'm a <a href="http://github.com/gregfrasco" target="_blank">software developer</a>, and a <a href="http://instagram.com/gregfrasco">photography enthusiast</a>. Send me an <a data-toggle="collapse" data-target="#collapseExampleEmail" aria-expanded="false" aria-controls="collapseExample" href="#">email</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 l3 center wow bounceIn" data-wow-delay="1s">
+            <a class="waves-effect btn-flat" href="#"><div> <i class="fa fa-envelope-o fa-2x" style="color:black" aria-hidden="true"></i></div></a>
+          </div>
+          <div class="col s12 m6 l3 center wow bounceIn" data-wow-delay="1.25s">
+            <a class="waves-effect btn-flat" href="#"><div> <i class="fa fa-github fa-2x" style="color:black" aria-hidden="true"></i></div></a>
+          </div>
+          <div class="col s12 m6 l3 center wow bounceIn" data-wow-delay="1.5s">
+            <a class="waves-effect btn-flat" href="#"><div> <i class="fa fa-linkedin fa-2x" style="color:black" aria-hidden="true"></i></div></a>
+          </div>
+          <div class="col s12 m6 l3 center wow bounceIn" data-wow-delay="1.75s">
+            <a class="waves-effect btn-flat" href="#"><div> <i class="fa fa-instagram fa-2x" style="color:black" aria-hidden="true"></i></div></a>
+          </div>
         </div>
       </div>
-      <div class="collapse" id="collapseExamplePhone">
-        <div class="well">
-          <a href="tel:+1-413-273-4819">+1 (413) 273-4819</a>
-        </div>
-      </div>
-    </center>
-  </div>
-  <div class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="http://gregfrasco.github.io/index.html"><i class="info icon"></i> About Me</a></li>
-          <li><a href="http://gregfrasco.github.io/resume.html"><i class="file text outline icon"></i> Resume</a></li>
-          <li><a href="http://gregfrasco.github.io/project.html"><i class="fork icon"></i> Projects</a></li>
-          <li><a href="http://gregfrasco.github.io/photography.html"><i class="camera retro icon"></i> Photography</a></li>
-          <li><a href="http://gregfrasco.github.io/contact_me.html"><i class="inbox icon"></i> Contact Me</a></li>
-        </ul>
-      </div>
+      <div class="col s4"></div>
     </div>
   </div>
-  <!-- Java Script -->
-  <script src="JS/track.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+
 </body>
 </html>
