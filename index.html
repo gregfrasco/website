@@ -9,6 +9,8 @@
   <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
   <!-- Anaimate Css-->
   <link rel="stylesheet" href="css/animate.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/index.css" />
   <!-- Google Tag -->
   <meta name="google-site-verification" content="hpHrvxHdMu-zkKSRMwHMBUuHSONB49IWN7geWX3K_Qg" />
   <title>Greg Frasco</title>
@@ -71,47 +73,11 @@
       <li><a class="btn-floating white tooltipped" data-position="top" data-tooltip="Contact Me"><i class="fa fa-user-circle-o" style="color:black"></i></a></li>
     </ul>
   </div>
-  <style>
-  body {
-    background-position: center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  .padding {
-    padding:1px;
-    width: 100%;
-  }
-
-  .padding-plus {
-    padding: 20px;
-  }
-
-  .title {
-    font-size: 20px;
-    margin: 0;
-  }
-  </style>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/wow.min.js"></script>
-  <script>new WOW().init();</script>
-  <script>
-  $(document).ready(function(){
-    bgImageTotal=13;
-    randomNumber = Math.round(Math.random()*(bgImageTotal-1))+1;
-    imgPath=('images/home_page/'+ randomNumber +'.JPG');
-    $('body').css('background-image', ('url("'+imgPath+'")'));
-    $('body').css('background-position', 'center center');
-    $('body').css('background-repeat', 'no-repeat');
-    $('body').css('background-size', 'cover');
-    $('.tooltipped').tooltip({delay: 50});
-  });
-
-  </script>
+  <script src="js/index.js"></script>
   <noscript>
     <style type="text/css">
       body{
