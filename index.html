@@ -95,7 +95,7 @@
   }
   </style>
   <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script>new WOW().init();</script>
@@ -106,6 +106,8 @@
     imgPath=('images/home_page/'+ randomNumber +'.JPG');
     $('body').css('background-image', ('url("'+imgPath+'")'));
     $('body').css('background-position', 'center center');
+    $('body').css('background-repeat', 'no-repeat');
+    $('body').css('background-size', 'cover');
     $('.tooltipped').tooltip({delay: 50});
   });
 
@@ -114,7 +116,9 @@
     <style type="text/css">
       body{
         background-image: url('images/home_page/13.JPG');
-        background-position: center center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     </style>
 </noscript>
