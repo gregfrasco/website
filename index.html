@@ -1,92 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="has-navbar-fixed-bottom">
 <head>
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- Font Awesome -->
-  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
-  <!-- Anaimate Css-->
-  <link rel="stylesheet" href="css/animate.css">
-  <!-- custom css -->
-  <link rel="stylesheet" href="css/index.css" />
-  <!-- Google Tag -->
-  <meta name="google-site-verification" content="hpHrvxHdMu-zkKSRMwHMBUuHSONB49IWN7geWX3K_Qg" />
-  <title>Greg Frasco</title>
-  <!-- Meta Tags -->
-  <meta charset="utf-8"><!-- html5 version of http-equiv="Content-Type"... -->
-  <meta name="description" content="Hello! My name is Greg Frasco and I am a Software Developer at Boston University. I am currently pursuing my master's degree in computer science. My studies have included: Machine Learning, Artificial Intelligence, Android Development, Web Development, Database Applications, Data Structures, and Object Oriented Design. I have used Java, SQL, Python, C++, Javascript, and C thought my projects and my career. I have worked on many projects including Predicting the Primary Presidential 2016 Election using machine learning and reducing the development time of new components for the International Space Station and the Orion Project. I take great pride in my work creating reliable and readable code. Check out my Github!">
-  <meta name="keywords" content="photography websites,photography studios,photography,photography art,photography ideas,photography images,Greg,Frasco,Greg Frasco,software engineer software developer, software, software architecture, software applications, software advice, software application developer, software best practices, software companies, software developer degree, software developer resume, software developer for hire, software developer freelancer, software developer for hire cheap, software developer freelancer cheap, software engineer degree cheap, software engineer resume cheap, software engineer for hire, software engineer freelancer, software engineer freelancer">
-  <link rel="author" href="gregfrasco.com" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 </head>
 <body>
-  <div class="row container">
-    <div class="col s1 m3"></div>
-    <div class="col s10 m6">
-      <div class="row">
-        <div class="valign-wrapper">
-          <div class="card hoverable wow bounceInDown s1" data-wow-delay="2s">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="responsive-img" src="https://avatars1.githubusercontent.com/u/5147346?v=3&s=460" alt="Greg Frasco">
-            </div>
-            <div class="card-content center-align">
-              <b><h2 class="title grey-text text-darken-4">Hello!</h2></b>
-              <h1 class="title grey-text text-darken-4">My name is Greg Frasco.</h1><br />
-              <p class="message">I'm a <a href="http://github.com/gregfrasco" target="_blank">software developer</a>, and a <a href="http://instagram.com/gregfrasco">photography enthusiast</a>. Send me an <a data-toggle="collapse" data-target="#collapseExampleEmail" aria-expanded="false" aria-controls="collapseExample" href="#">email</a>.</p>
-            </div>
-          </div>
+<div id="fullpage">
+<nav class="navbar is-fixed-bottom has-shadow is-dark">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <div class="name">Greg Frasco</div>
+        </a>
+        <div class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="row">
-          <div class="container col s6 m6 l3 center wow bounceIn" data-wow-delay="3s">
-            <div class="card hoverable">
-              <a class="padding waves-effect btn-flat" href="#"><div> <i class="fa fa-envelope-o fa-2x" style="color:black" aria-hidden="true"></i></div></a>
-            </div>
-          </div>
-          <div class="container col s6 m6 l3 center wow bounceIn" data-wow-delay="3.25s">
-            <div class="card hoverable">
-              <a class="padding waves-effect btn-flat" href="#"><div> <i class="fa fa-github fa-2x" style="color:black" aria-hidden="true"></i></div></a>
-            </div>
-          </div>
-          <div class="container col s6 m6 l3 center wow bounceIn" data-wow-delay="3.5s">
-            <div class="card hoverable">
-              <a class="padding waves-effect btn-flat" href="#"><div> <i class="fa fa-linkedin fa-2x" style="color:black" aria-hidden="true"></i></div></a>
-            </div>
-          </div>
-          <div class="container col s6 m6 l3 center wow bounceIn" data-wow-delay="3.75s">
-            <div class="card hoverable">
-              <a class="padding waves-effect btn-flat" href="#"><div> <i class="fa fa-instagram fa-2x" style="color:black" aria-hidden="true"></i></div></a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="fixed-action-btn horizontal click-to-toggle wow rotateInUpRight" data-wow-delay="4s">
-    <a class="btn-floating btn-large white">
-      <i class="fa fa-bars" aria-hidden="true" style="color:black"></i>
-    </a>
-    <ul>
-      <li><a class="btn-floating white tooltipped" data-position="top" data-tooltip="Resume"><i class="fa fa-file-pdf-o" style="color:black"></i></a></li>
-      <li><a class="btn-floating white tooltipped" data-position="top" data-tooltip="Projects"><i class="fa fa-code-fork" style="color:black"></i></a></li>
-      <li><a class="btn-floating white tooltipped" data-position="top" data-tooltip="Photography"><i class="fa fa-camera-retro" style="color:black"></i></a></li>
-      <li><a class="btn-floating white tooltipped" data-position="top" data-tooltip="Contact Me"><i class="fa fa-user-circle-o" style="color:black"></i></a></li>
-    </ul>
-  </div>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/index.js"></script>
-  <noscript>
-    <style type="text/css">
-      body{
-        background-image: url('images/home_page/13.JPG');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>
-</noscript>
+    <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="/#aboutMe">
+                About Me
+            </a>
+            <a class="navbar-item" href="/resume">
+                Resume
+            </a>
+            <a class="navbar-item" href="/projects">
+                Projects
+            </a>
+            <a class="navbar-item" href="/photography">
+                Photography
+            </a>
+            <a class="navbar-item" href="/#contactMe">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</nav>
+<section class="section hero is-fullheight" id="home">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns">
+                <div class="column is-4-desktop is-offset-4-desktop is-10-touch is-offset-1-touch">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src=https://avatars0.githubusercontent.com/u/5147346?s=460"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Hello!</p>
+                            <p class="subtitle">I'm Greg Frasco</p>
+                            <div class="content">
+                                I’m a software developer, and a photography enthusiast. Send me an email.
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-hidden-touch">
+                <div class="column is-4 is-offset-4">
+                    <div class="columns">
+                        <div class="column is-3">
+                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                <i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-hidden-desktop">
+                <div class="column is-10 is-offset-1">
+                    <div class="columns">
+                        <div class="column is-6">
+                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                <i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-6">
+                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section hero is-fullheight" id="aboutMe">
+</section>
+</div>
+<script src="js/letters.js"></script>
+<script src="node_modules/segment-js/dist/segment.min.js"></script>
+<script src="node_modules/d3-ease/build/d3-ease.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

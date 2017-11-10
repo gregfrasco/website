@@ -1,0 +1,12 @@
+{
+  "name": "gregfrasco.com",
+  "version": "0.0.1",
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "d3-ease": "0.6.0",
+    "font-awesome": "^4.7.0",
+    "fullpage.js": "^2.9.5",
+    "jquery": "^3.2.1",
+    "segment-js": "1.0.8"
+  }
+}
