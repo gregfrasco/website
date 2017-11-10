@@ -1,0 +1,19 @@
+body {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.padding {
+    padding: 10%;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.avatarHeader {
+    padding: 10% 10% 5% 10%;
+}
