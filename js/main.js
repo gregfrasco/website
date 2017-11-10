@@ -1,11 +1,15 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        lockAnchors: true,
         anchors:['home', 'aboutMe'],
         paddingTop: '0px',
         paddingBottom: '0px',
         fixedElements: 'nav',
-        css3: true
+        css3: true,
+        onLeave: function(index, nextIndex, direction){
+            const menuIds = ['blank','homeNav', 'aboutMeNav', 'resumeNav','projectsNav','photographyNav','contactMeNav'];
+            $('#' + menuIds[index]).removeClass('is-active');
+            $('#' + menuIds[nextIndex]).addClass('is-active');
+        },
     });
     bgImageTotal=1;
     randomNumber = Math.round(Math.random()*(bgImageTotal-1))+1;
