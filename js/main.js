@@ -1,6 +1,10 @@
+bgImageTotal=2;
+randomNumber = Math.round(Math.random()*(bgImageTotal-1))+1;
+imgPath=('images/homePage/'+ randomNumber +'.JPG');
+$('body').css('background-image', ('url("'+imgPath+'")'));
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors:['home', 'aboutMe'],
+        anchors:['home', 'aboutMe','resume','projects','photography','contactMe'],
         paddingTop: '0px',
         paddingBottom: '0px',
         fixedElements: 'nav',
@@ -11,11 +15,6 @@ $(document).ready(function() {
             $('#' + menuIds[nextIndex]).addClass('is-active');
         },
     });
-    bgImageTotal=1;
-    randomNumber = Math.round(Math.random()*(bgImageTotal-1))+1;
-    imgPath=('images/homePage/'+ randomNumber +'.JPG');
-    $('body').css('background-image', ('url("'+imgPath+'")'));
-
     var el = document.querySelector('.name');
     // All the possible options (these are the default values)
     // Remember that every option (except individualDelays) can be defined as single value or array

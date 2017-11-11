@@ -7,121 +7,251 @@
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 </head>
 <body>
 <div id="fullpage">
-<nav class="navbar is-fixed-bottom has-shadow is-dark">
-    <div class="navbar-brand">
-        <a id="homeNav" class="navbar-item is-active" href="#home">
-            <div class="name">Greg Frasco</div>
-        </a>
-        <div class="navbar-burger burger" data-target="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="navbar is-fixed-bottom has-shadow is-dark">
+        <div class="navbar-brand">
+            <a id="homeNav" class="navbar-item is-active" href="#home">
+                <div class="name">Greg Frasco</div>
+            </a>
+            <div class="navbar-burger burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
-    <div id="navMenu" class="navbar-menu">
-        <div class="navbar-start">
-            <a id="aboutMeNav" class="navbar-item" href="#aboutMe">
-                About Me
-            </a>
-            <a id="resumeNav" class="navbar-item" href="#resume">
-                Resume
-            </a>
-            <a id="projectsNav" class="navbar-item" href="#projects">
-                Projects
-            </a>
-            <a id="photographyNav" class="navbar-item" href="#photography">
-                Photography
-            </a>
-            <a id="contactMeNav" class="navbar-item" href="#contactMe">
-                Contact Me
-            </a>
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a id="aboutMeNav" class="navbar-item" href="#aboutMe">
+                    About Me
+                </a>
+                <a id="resumeNav" class="navbar-item" href="#resume">
+                    Resume
+                </a>
+                <a id="projectsNav" class="navbar-item" href="#projects">
+                    Projects
+                </a>
+                <a id="photographyNav" class="navbar-item" href="#photography">
+                    Photography
+                </a>
+                <a id="contactMeNav" class="navbar-item" href="#contactMe">
+                    Contact Me
+                </a>
+            </div>
         </div>
-    </div>
-</nav>
-<section class="section hero is-fullheight">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-body padding">
-        <div class="container has-text-centered">
-            <div class="columns">
-                <div class="column is-4-desktop is-offset-4-desktop is-10-touch is-offset-1-touch">
-                    <div class="card">
-                        <figure class="image avatarHeader">
-                            <img class="avatar" src=https://avatars0.githubusercontent.com/u/5147346?s=460"
-                                 alt="A picture of me">
-                        </figure>
-                        <div class="card-content">
-                            <p class="title">Hello!</p>
-                            <p class="subtitle">I'm Greg Frasco</p>
-                            <div class="content">
-                                I’m a software developer, and a photography enthusiast. Send me an email.
-                                <br>
+    </nav>
+    <section class="section hero is-fullheight" data-anchor="home">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-body padding">
+            <div class="container has-text-centered">
+                <div class="columns">
+                    <div class="column is-4-desktop is-offset-4-desktop is-10-touch is-offset-1-touch">
+                        <div class="card" id="homeCard">
+                            <figure class="image avatarHeader">
+                                <img class="avatar" src=https://avatars0.githubusercontent.com/u/5147346?s=460"
+                                     alt="A picture of me">
+                            </figure>
+                            <div class="card-content">
+                                <p class="title">Hello!</p>
+                                <p class="subtitle">I'm Greg Frasco</p>
+                                <div class="content secFont">
+                                    I’m a software developer, and a photography enthusiast. Send me an email.
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-hidden-touch">
+                    <div class="column is-4 is-offset-4">
+                        <div class="columns">
+                            <div class="column is-3">
+                                <div class="card card-icon hvr-grow-shadow hvr-box-shadow-outset" style="padding-top: 5px; padding-bottom: 5px">
+                                    <i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="column is-3">
+                                <div class="card card-icon hvr-float-shadow" style="padding-top: 5px; padding-bottom: 5px">
+                                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="column is-3">
+                                <div class="card card-icon hvr-pop hvr-glow" style="padding-top: 5px; padding-bottom: 5px">
+                                    <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="column is-3">
+                                <div class="card card-icon hvr-rotate hvr-round-corners" style="padding-top: 5px; padding-bottom: 5px">
+                                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-hidden-desktop">
+                    <div class="column is-10 is-offset-1">
+                        <div class="columns">
+                            <div class="column is-6">
+                                <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                    <i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                    <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                    <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="card" style="padding-top: 5px; padding-bottom: 5px">
+                                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="columns is-hidden-touch">
-                <div class="column is-4 is-offset-4">
-                    <div class="columns">
-                        <div class="column is-3">
-                            <div class="card card-icon hvr-grow-shadow hvr-box-shadow-outset" style="padding-top: 5px; padding-bottom: 5px">
-                                <i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="column is-3">
-                            <div class="card card-icon hvr-float-shadow" style="padding-top: 5px; padding-bottom: 5px">
-                                <i class="fa fa-2x fa-github" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="column is-3">
-                            <div class="card card-icon hvr-pop hvr-glow" style="padding-top: 5px; padding-bottom: 5px">
-                                <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="column is-3">
-                            <div class="card card-icon hvr-rotate hvr-round-corners" style="padding-top: 5px; padding-bottom: 5px">
-                                <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
-                            </div>
-                        </div>
+        </div>
+    </section>
+    <section class="section hero is-fullheight" data-anchor="aboutMe">
+        <div class="hero-body padding">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-offset-3 is-6 box">
+                        <h2 class="title">It's great to meet you!</h2>
+                        <p class="secFont">
+                            The European languages are members of the same family. Their separate existence is a myth.
+                            For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                            in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                            new common language would be desirable: one could refuse to pay expensive translators.
+                            To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+                        </p><br>
+                        <p class="secFont">
+                            The European languages are members of the same family. Their separate existence is a myth.
+                            For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                            in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                            new common language would be desirable: one could refuse to pay expensive translators.
+                            To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="columns is-hidden-desktop">
-                <div class="column is-10 is-offset-1">
-                    <div class="columns">
-                        <div class="column is-6">
-                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
-                                <i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="column is-6">
-                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
-                                <i class="fa fa-2x fa-github" aria-hidden="true"></i>
-                            </div>
-                        </div>
+        </div>
+    </section>
+    <section class="section hero is-fullheight" data-anchor="resume">
+        <div class="hero-body padding">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-offset-3 is-6 box">
+                        <h2 class="title">Resume</h2>
                     </div>
-                    <div class="columns">
-                        <div class="column is-6">
-                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
-                                <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hero is-fullheight" data-anchor="projects">
+        <div class="hero-body padding">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-offset-3 is-6 box">
+                        <h2 class="title">Projects</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hero is-fullheight" data-anchor="photography">
+        <div class="hero-body padding">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-offset-3 is-6 box">
+                        <h2 class="title">Photography</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hero is-fullheight" data-anchor="contactMe">
+        <div class="hero-body padding">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-offset-3 is-6 box">
+                        <h2 class="title">Contact Me</h2>
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">From</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <p class="control is-expanded has-icons-left">
+                                        <input class="input" type="text" placeholder="Full Name">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="field">
+                                    <p class="control is-expanded has-icons-left has-icons-right">
+                                        <input class="input" type="email" placeholder="Email">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="column is-6">
-                            <div class="card" style="padding-top: 5px; padding-bottom: 5px">
-                                <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">Subject</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">Question</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="Explain how I can help"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field is-horizontal">
+                            <div class="field-label">
+                                <!-- Left empty for spacing -->
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-primary">
+                                            Send message
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="section hero is-fullheight">
-</section>
+    </section>
 </div>
 <script src="js/letters.js"></script>
 <script src="node_modules/segment-js/dist/segment.min.js"></script>

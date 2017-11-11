@@ -9,5 +9,8 @@
     "hover.css": "^2.2.1",
     "jquery": "^3.2.1",
     "segment-js": "1.0.8"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
   }
 }

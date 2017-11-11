@@ -4,6 +4,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
 }
 
 .padding {
@@ -15,9 +16,17 @@ body {
 }
 
 .avatarHeader {
-    padding: 10% 10% 5% 10%;
+    padding: 15% 15% 5% 15%;
 }
 
 .card-icon {
     width: 100%;
+}
+
+.mainFont {
+    font-family: 'Roboto', sans-serif;
+}
+
+.secFont {
+    font-family: 'Raleway', sans-serif;
 }
